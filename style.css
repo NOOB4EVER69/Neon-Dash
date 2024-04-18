@@ -1,0 +1,132 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* Increased padding for a bigger header size */
+    background-color: #343a40;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    /* Reset font size to default for a bigger header */
+}
+
+#leaderboard {
+    display: flex;
+    align-items: center;
+}
+
+#leaderboard span {
+    margin-right: 10px;
+    padding: 10px 15px;
+    /* Increased padding for a bigger header size */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#timer {
+    padding: 10px 15px;
+    /* Increased padding for a bigger header size */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    /* Increased padding for bigger buttons */
+    margin-left: 10px;
+    font-size: 1em;
+    /* Reset font size to default for bigger buttons */
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    margin: 20px auto;
+    /* Increased margin for spacing between header and game container */
+    overflow: hidden;
+}
+
+canvas {
+    background-color: #28282d;
+}
+
+#winScreen {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 20%;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a retro font for the header */
+#header {
+    font-family: 'RetroGaming', sans-serif;
+    /* Other styles for the header (as needed) */
+}
+
+/* Add neon glow effect to the leaderboard and timer */
+#leaderboard,
+#timer {
+    text-shadow:
+        0 0 5px #c8c8c8,
+        0 0 10px #c8c8c8,
+        0 0 20px #c8c8c8,
+        0 0 40px #ff00de,
+        0 0 80px #ff00de,
+        0 0 90px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
+}
+
+/* Add other retro and glowing styles as needed */
+/* ... */
+
+
+body {
+    background-color: #000;
+}
+
+/* Neon glow effect for players */
+.red-player,
+.blue-player {
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff00de,
+        0 0 80px #ff00de,
+        0 0 90px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Dash</title>
+    <link rel="icon" href="./Untitled.png" type="image/" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="leaderboard">
+            <span>Score :</span> <span id="redScore">Red: 0</span> | <span id="blueScore">Blue: 0</span>
+        </div>
+        <div id="timer">
+            <p>Time left: 30s</p>
+        </div>
+        <div id="buttons">
+
+            <a href="./about .htm"><button id="aboutButton">About</button></a>
+        </div>
+    </div>
+    <div id="gameContainer">
+        <div id="winScreen"></div>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+    </div>
+    <p id="secr" style="visibility: hidden;"></p>
+    <script src="./java.js"></script>
+</body>
+
+</html>
